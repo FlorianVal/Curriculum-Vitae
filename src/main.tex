@@ -1,0 +1,123 @@
+\documentclass[letterpaper,11pt]{article}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{MidnightBlue}
+
+\usepackage{simplecv}
+
+\boldname{Florian}{Valade}{N.}
+
+\begin{document}
+
+% Heading
+\headinginline{Valade Florian}{
+    Email: \email{florian\_val@outlook.fr} \\
+    LinkedIn: \linkedin{florian-valade} \\
+    GitHub: \github{FlorianVal} \\
+    Site Web: \website{fvalade.fr}
+}
+
+% Education Section
+\section{Education}
+
+\outerlist{
+    \entrybig
+    {\textbf{Université Gustave Eiffel}}{Paris, France}
+    {Thèse : Généralisation d’algorithmes légers pour la reconnaissance sur caméra embarquée}{2022\textendash Présent}
+
+    \entrybig
+    {\textbf{ECE Paris}}{Paris, France}
+    {Diplôme d'Ingénieur en Systèmes d'Information, Big Data et Machine Learning}{2021}
+
+    \entrybig
+    {\textbf{Lycée L'Espérance}}{Paris, France}
+    {Baccalauréat Scientifique}{2015}
+}
+
+% Experience Section
+\section{Experience}
+
+\outerlist{
+    \entrybig
+    {\textbf{Fujitsu - Université Gustave Eiffel}}{Paris, France}
+    {Thèse CIFRE, Ingénieur de recherche}{2022\textendash Présent}
+    \innerlist{
+        \entry{Sujet: Généralisation d’algorithmes légers pour la reconnaissance sur caméra embarquée.}
+    }
+
+    \entrybig
+    {\textbf{Fujitsu}}{Paris, France}
+    {Data Scientist}{2021\textendash 2022}
+    \innerlist{
+        \entry{Développement et gestion de projets en vision par ordinateur et deep learning.}
+    }
+
+    \entrybig
+    {\textbf{Fujitsu - ECE Paris}}{Paris, France}
+    {Apprenti Data Scientist, spécialisé en Computer Vision}{2018\textendash 2021}
+    \innerlist{
+        \entry{Formation et application de techniques de vision par ordinateur et machine learning.}
+    }
+
+    \entrybig
+    {\textbf{Fujitsu}}{Paris, France}
+    {Stagiaire Data Scientist}{Avril 2018\textendash Sept. 2018}
+    \innerlist{
+        \entry{Développement de démonstrations en deep learning.}
+    }
+}
+
+% Skills Section
+\sidebyside
+    {
+        \section{Compétences}
+
+        \outerlist{
+            \entry{\textbf{Langages de programmation:} Python, Java, C\#, C, SQL}
+            \entry{\textbf{Frameworks et Outils:} Pytorch, Tensorflow, Docker, Git}
+            \entry{\textbf{Développement et Systèmes:} Front End avec React, Réseau, Calcul Distribué, Cyber Sécurité, Administration Système}
+        }
+    }
+    {
+        \section{Langues}
+        \denseouterlist{
+            \entry{\textbf{Anglais: } Courant}
+            \entry{\textbf{Français: } Natif}
+            \entry{\textbf{Espagnol: } Intermédiaire}
+        }
+    }
+
+% Projects Section
+\section{Projets}
+
+\vspace{1em}
+
+\begin{minipage}[t]{0.505\textwidth}
+
+\outerlist{
+
+\entrybig[\textbullet]
+{Handterpret (Tensorflow et électronique, 2020)}{}
+{Chef de projet de fin détude en école d'ingénieur }{}
+{Détection de la position de la main grâce a des capteurs infrarouge sur le poignet}
+
+}
+
+\end{minipage}
+\begin{minipage}[t]{0.48\textwidth}
+
+\outerlist{
+
+\entrybig[\textbullet]
+{AutoCradle (Tensorflow et électronique, 2017)}{}
+{Projet d'équipe}{}
+{Détection automatique de pleurs de bébé pour activer le balancement du landau}
+
+}
+
+\end{minipage}
+
+\end{document}
