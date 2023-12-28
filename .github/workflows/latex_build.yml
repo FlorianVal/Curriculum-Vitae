@@ -1,4 +1,4 @@
-name: Build LaTeX Document
+name: Build and Release LaTeX Document
 
 on:
   push:
@@ -7,12 +7,15 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v2
@@ -20,8 +23,16 @@ jobs:
         root_file: main.tex
         working_directory: src
 
-    - name: Upload PDF
-      uses: actions/upload-artifact@v2
+    - name: Get Current Date
+      run: echo "CURRENT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      if: github.ref == 'refs/heads/main'
       with:
-        name: compiled-pdf
-        path: src/main.pdf
+        files: ./src/main.pdf
+        tag_name: ${{ env.CURRENT_DATE }}
+        name: Release ${{ env.CURRENT_DATE }}
+        body: "PDF document released on ${{ env.CURRENT_DATE }}"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
