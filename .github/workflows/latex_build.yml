@@ -15,13 +15,35 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+
+    - name: Checkout CV Repository
+      uses: actions/checkout@v4
+      with:
+        repository: ${{ github.repository }}
+
+    - name: Checkout Website Repository
+      uses: actions/checkout@v4
+      with:
+        repository: ${{ secrets.WEBSITE_REPOSITORY }}
+        path: website
 
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v2
       with:
         root_file: main.tex
         working_directory: src
+
+    - name: Copy CV PDF to Website
+      run: cp ./src/main.pdf website/public/
+
+    - name: Commit and Push Website
+      run: |
+        cd website
+        git config --global user.name 'Florian Valade'
+        git config --global user.email 'florian_val@outlook.fr'
+        git add public/cv.pdf
+        git commit -m "Update CV"
+        git push
 
     - name: Get Current Date
       run: echo "CURRENT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
