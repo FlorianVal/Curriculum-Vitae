@@ -26,6 +26,7 @@ jobs:
       with:
         repository: ${{ secrets.WEBSITE_REPOSITORY }}
         path: website
+        token: ${{ secrets.PAT_TOKEN }}
 
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v2
@@ -39,8 +40,8 @@ jobs:
     - name: Commit and Push Website
       run: |
         cd website
-        git config --global user.name 'Florian Valade'
-        git config --global user.email 'florian_val@outlook.fr'
+        git config --global user.name 'CV Actions Bot'
+        git config --global user.email ''
         git add public/main.pdf
         git commit -m "Update CV"
         git push
