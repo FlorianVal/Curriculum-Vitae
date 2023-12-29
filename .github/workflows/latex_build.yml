@@ -41,7 +41,7 @@ jobs:
         cd website
         git config --global user.name 'Florian Valade'
         git config --global user.email 'florian_val@outlook.fr'
-        git add public/cv.pdf
+        git add public/main.pdf
         git commit -m "Update CV"
         git push
 
