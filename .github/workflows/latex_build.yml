@@ -48,7 +48,8 @@ jobs:
         cd website
         git config --global user.name 'CV Actions Bot'
         git config --global user.email ''
-        git add public/main.pdf
+        git add public/main_fr.pdf
+        git add public/main_en.pdf
         git commit -m "Update CV"
         git push
 
@@ -59,7 +60,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       if: github.ref == 'refs/heads/main'
       with:
-        files: ./src/main.pdf
+        files: ./src/main*.pdf
         tag_name: ${{ env.CURRENT_DATE }}
         name: Release ${{ env.CURRENT_DATE }}
         body: "PDF document released on ${{ env.CURRENT_DATE }}"
