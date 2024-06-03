@@ -1,0 +1,123 @@
+\documentclass[letterpaper,11pt]{article}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{MidnightBlue}
+
+\usepackage{simplecv}
+
+\boldname{Florian}{Valade}{N.}
+
+\begin{document}
+
+% Heading
+\headinginline{Valade Florian}{
+    Email: \email{florian\_val@outlook.fr} \\
+    LinkedIn: \linkedin{florian-valade} \\
+    GitHub: \github{FlorianVal} \\
+    Website: \website{fvalade.fr}
+}
+
+% Education Section
+\section{Education}
+
+\outerlist{
+    \entrybig
+    {\textbf{Université Gustave Eiffel}}{Paris, France}
+    {PhD in Optimization of Deep Learning Algorithms}{2022\textendash Present}
+
+    \entrybig
+    {\textbf{ECE Paris}}{Paris, France}
+    {Master's Degree in Computer Science, Big Data and Machine Learning}{2021}
+
+    \entrybig
+    {\textbf{Lycée L'Espérance}}{Paris, France}
+    {High School Diploma in Science}{2015}
+}
+
+% Experience Section
+\section{Experience}
+
+\outerlist{
+    \entrybig
+    {\textbf{Fujitsu - Université Gustave Eiffel}}{Paris, France}
+    {PhD Candidate, Research Engineer}{2022\textendash Present}
+    \innerlist{
+        \entry{Subject: Optimization of lightweight algorithms for recognition on embedded cameras.}
+    }
+
+    \entrybig
+    {\textbf{Fujitsu}}{Paris, France}
+    {Data Scientist}{2021\textendash 2022}
+    \innerlist{
+        \entry{Development and management of projects in computer vision and deep learning.}
+    }
+
+    \entrybig
+    {\textbf{Fujitsu - ECE Paris}}{Paris, France}
+    {Data Scientist Apprentice, specialized in Computer Vision}{2018\textendash 2021}
+    \innerlist{
+        \entry{Training and application of computer vision and machine learning techniques.}
+    }
+
+    \entrybig
+    {\textbf{Fujitsu}}{Paris, France}
+    {Data Scientist Intern}{April 2018\textendash Sept. 2018}
+    \innerlist{
+        \entry{Development of demonstrations in deep learning.}
+    }
+}
+
+% Skills Section
+\sidebyside
+{
+    \section{Skills}
+
+    \outerlist{
+        \entry{\textbf{Programming Languages:} Python, Java, C\#, C, SQL}
+        \entry{\textbf{Frameworks and Tools:} Pytorch, Tensorflow, Docker, Git}
+        \entry{\textbf{Development and Systems:} Front End with React, DevOps, Network, Distributed Computing, Cyber Security, System Administration}
+    }
+}
+{
+    \section{Languages}
+    \denseouterlist{
+        \entry{\textbf{English:} Fluent}
+        \entry{\textbf{French:} Native}
+        \entry{\textbf{Spanish:} Intermediate}
+    }
+}
+
+% Projects Section
+\section{Projects}
+
+\vspace{1em}
+
+\begin{minipage}[t]{0.505\textwidth}
+
+    \outerlist{
+
+        \entrybig[\textbullet]
+        {Handterpret (Tensorflow and electronics, 2020)}{}
+        {Project Manager for end-of-study project}{}
+        {Detection of hand position using infrared sensors on the wrist}
+
+    }
+
+\end{minipage}
+\begin{minipage}[t]{0.48\textwidth}
+
+    \outerlist{
+
+        \entrybig[\textbullet]
+        {AutoCradle (Tensorflow and electronics, 2017)}{}
+        {Team project}{}
+        {Automatic detection of baby cries to activate the rocking of the cradle}
+
+    }
+
+\end{minipage}
+
+\end{document}

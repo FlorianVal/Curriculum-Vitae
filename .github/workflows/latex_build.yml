@@ -28,14 +28,20 @@ jobs:
         path: website
         token: ${{ secrets.PAT_TOKEN }}
 
-    - name: Compile LaTeX document
+    - name: Compile French document
       uses: xu-cheng/latex-action@v2
       with:
-        root_file: main.tex
+        root_file: main_fr.tex
+        working_directory: src
+
+    - name: Compile English document
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: main_en.tex
         working_directory: src
 
     - name: Copy CV PDF to Website
-      run: cp ./src/main.pdf website/public/
+      run: cp ./src/main*.pdf website/public/
 
     - name: Commit and Push Website
       run: |
