@@ -36,3 +36,5 @@
 
 # LaTeX project-specific files
 # Add any project-specific files or directories to ignore here
+.aider*
+.DS_Store
