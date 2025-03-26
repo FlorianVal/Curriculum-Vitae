@@ -1,0 +1,30 @@
+[Your Name]
+[Your Address - Optional]
+[Your Phone]
+[Your Email]
+[Your LinkedIn Profile URL - Optional]
+[Your Website/Portfolio URL - Optional]
+
+[Date]
+
+[Hiring Manager Name - If known, otherwise use title]
+[Hiring Manager Title - e.g., Hiring Team]
+Google DeepMind
+[Google DeepMind Address - Optional]
+
+**Subject: Application for AI for Code Research Scientist Position**
+
+Dear [Mr./Ms./Mx. Last Name or Hiring Team],
+
+I am writing to express my enthusiastic interest in the AI for Code Research Scientist position at Google DeepMind, as advertised [mention where you saw the advertisement, e.g., on the Google Careers page]. As a PhD candidate nearing completion of my research focused on the efficiency of deep learning algorithms, particularly in areas like Early Exits and Large Language Model (LLM) inference acceleration, I am deeply impressed by DeepMind's mission to advance the state of the art in AI for widespread public benefit. The opportunity to contribute to foundational research in areas like Code Generation and Understanding within your dynamic team strongly resonates with my skills and aspirations.
+
+My doctoral research at Université Gustave Eiffel, conducted in collaboration with Fujitsu, has provided me with a strong foundation in machine learning and statistics. My work on "EERO: Early Exit with Reject Option" and "Accelerating Large Language Model Inference with Self-Supervised Early Exits" directly addresses the challenge of optimizing model performance, a key aspect of developing impactful AI solutions. I possess hands-on experience in training, fine-tuning, and optimizing LLMs, utilizing frameworks such as PyTorch, TensorFlow, and JAX, as listed in the job requirements. My experience teaching Master's level courses in both Computer Vision and Natural Language Processing (NLP) has further solidified my understanding of these domains.
+
+Beyond research, my industry experience at Fujitsu, spanning roles from Intern to Research Engineer, has equipped me with practical skills in applying AI to real-world problems. I have been involved in the full lifecycle of ML projects, from proof-of-concept to deployment. For instance, the "FreshDetect" project involved developing and integrating an end-to-end computer vision solution using PyTorch and Docker. This experience, combined with my skills in Python, software engineering practices (Git, Docker), and managing GPU infrastructure, aligns well with the role's emphasis on rapid prototyping, experimentation, and bridging research with production. While my direct publication history isn't focused specifically on "AI for Code," my deep experience with NLP, LLMs, and tackling complex optimization problems provides a relevant foundation, and I am incredibly eager to apply my skills to this specific, high-impact domain.
+
+I thrive in ambiguous environments that require novel solutions, as demonstrated by my research and project work. My passion for AI, coupled with strong problem-solving and communication skills honed through research collaborations and teaching, makes me confident in my ability to contribute effectively to your team and collaborate cross-functionally.
+
+Thank you for considering my application. I have attached my CV for your review and welcome the opportunity to discuss how my background in efficient deep learning, LLMs, and practical ML development can contribute to Google DeepMind's pioneering work.
+
+Sincerely,
+Florian Valade
