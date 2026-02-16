@@ -1,133 +1,114 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[11pt,a4paper,sans]{moderncv}
 
-% Choose bibliography style for formatting list of publications
-\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+% ModernCV themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
 
-% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
-\def\theme{MidnightBlue}
+% Character encoding
+\usepackage[utf8]{inputenc}
 
-\usepackage{simplecv}
+% Adjust the page margins
+\usepackage[scale=0.9]{geometry}
+\usepackage{needspace}
 
-\boldname{Florian}{Valade}{N.}
+% Personal data
+\firstname{Florian}
+\familyname{Valade}
+\title{Ingénieur de Recherche en Machine Learning}
+\address{France}{}
+\phone[mobile]{+33 6 17 57 19 12}
+\email{florian\_val@outlook.fr}
+\homepage{fvalade.fr}
+\social[linkedin]{florian-valade}
+\social[github]{FlorianVal}
 
 \begin{document}
+\makecvtitle
 
-% En-tête
-\headinginline{Valade Florian}{
-    \begin{tabular}{l@{\hspace{1em}}l}
-        Email:     & \email{florian\_val@outlook.fr} \\
-        Téléphone: & +33 6 17 57 19 12               \\
-        LinkedIn:  & \linkedin{florian-valade}       \\
-        GitHub:    & \github{FlorianVal}             \\
-        Site web:  & \website{fvalade.fr}
-    \end{tabular}
-}
+% PROFILE
+\section{Profil}
+Ingénieur de Recherche en Machine Learning spécialisé dans l'apprentissage profond efficace, les grands modèles de langage (LLMs), l'inférence adaptative et l'entraînement distribué. Expérimenté dans la conception de nouvelles architectures, l'exécution d'expériences à grande échelle, la construction de systèmes multimodaux et l'optimisation de l'infrastructure d'entraînement sur GPU.
 
-{\normalfont{À la recherche d'un poste de recherche}}
+% HIGHLIGHTS
+\section{Sélection de Recherches et Réalisations}
+\cvlistitem{Entraînement et fine-tuning de LLMs type GPT (70M--1.3B paramètres) sur clusters multi-GPU (V100/A100) avec FSDP, DDP, Accelerate et pipelines distribués personnalisés.}
+\cvlistitem{Développement de méthodes d'inférence adaptative (sorties anticipées, option de rejet, récursion) réalisant des réductions significatives de FLOPs tout en préservant la précision du modèle.}
+\cvlistitem{Construction de pipelines de données à grande échelle : chargeurs streaming, déduplication, filtrage et curation.}
+\cvlistitem{Conception de variantes de Transformers efficaces en calcul et analyse des lois de mise à l'échelle sur les compromis perte--calcul.}
+\cvlistitem{Développement d'outils internes basés sur LLM pour l'automatisation des workflows.}
+\cvlistitem{Gestion de serveurs GPU et infrastructure de recherche ; optimisation du débit, stabilité d'entraînement et reproductibilité.}
 
-% Section Formation
+% EDUCATION
 \section{Formation}
+\cventry{2022--Présent}{Doctorat en Efficacité des Algorithmes d'Apprentissage Profond}{Université Gustave Eiffel}{Paris, France}{}{}
+\cventry{2021}{Master en Informatique, Big Data et Apprentissage Automatique}{ECE Paris}{Paris, France}{}{}
+\cventry{2015}{Baccalauréat Scientifique}{Lycée L'Espérance}{Paris, France}{}{}
 
-\outerlist{
-    \entrybig%
-    {\textbf{Université Gustave Eiffel}}{Paris, France}
-    {Doctorat en efficacité des algorithmes d'apprentissage profond}{2022 \textendash{} Jan. 2026 (soutenu)}
-    
-    \entrybig%
-    {\textbf{ECE Paris}}{Paris, France}
-    {Master en informatique, Big Data et apprentissage automatique}{2021}
-    
-    \entrybig%
-    {\textbf{Lycée L'Espérance}}{Paris, France}
-    {Baccalauréat scientifique}{2015}
-}
-
-% Section Publications
+% PUBLICATIONS
 \section{Publications}
+\cvitem{2025}{\textbf{EERO: Early Exit with Reject Option} --- UAI 2025.
+    \begin{itemize}
+        \item Formalise les sorties anticipées sélectives utilisant les compromis risque--couverture.
+        \item Respecte des budgets de calcul stricts et améliore le compromis vitesse/précision de l'état de l'art.
+    \end{itemize}}
+\cvitem{2024}{\textbf{Accelerating Large Language Model Inference with Self-Supervised Early Exits}.
+    \begin{itemize}
+        \item Introduit des extensions de sorties anticipées fine-tunées pour LLMs utilisant des signaux de supervision internes.
+        \item Permet une inférence efficace en FLOPs avec accélération jusqu'à 50\%.
+        \item Atteint +66\% de taux d'acceptation et 14x moins de tokens gaspillés comparé au décodage spéculatif.
+    \end{itemize}}
 
-\outerlist{
-    \entrybig%
-    {EERO: Early Exit with Reject Option (2025)}{}
-    {- Optimisation des mécanismes de sortie anticipée dans les tâches de classification.}{UAI 2025}
-    
-    \entrybig%
-    {Accelerating Large Language Model Inference with Self-Supervised Early Exits (2024)}{}
-    {- Extension des techniques de sortie anticipée aux grands modèles de langage pour optimiser l'inférence.}{}
-}
-
-% Section Expérience
+% EXPERIENCE
+\needspace{6\baselineskip}
 \section{Expérience}
 
-\outerlist{
-    \entrybig
-    {\textbf{Fujitsu}}{Paris, France}
-    {Ingénieur de recherche en IA}{Jan. 2026 \textendash{} Présent}
-    \innerlist{
-        \entry{[ADAPTER: Description du poste actuel - recherche, développement, projets en cours]}
-    }
+\cventry{2026--Actuel}{Ingénieur de Recherche en IA}{Fujitsu}{Paris, France}{}{
+    \begin{itemize}
+        \item Développement et adaptation de grands modèles de langage pour diverses applications.
+    \end{itemize}}
 
-    \entrybig
-    {\textbf{Fujitsu -- Université Gustave Eiffel}}{Paris, France}
-    {Doctorant, Ingénieur de recherche}{2022 \textendash{} Jan. 2026 (thèse soutenue)}
-    \innerlist{
-        \entry{Optimisation d'algorithmes d'apprentissage profond pour la reconnaissance sur caméras embarquées à l'aide de techniques statistiques sur les sorties anticipées (Early Exit).}
-        \entry{Entraînement et ajustement (fine-tuning) de grands modèles de langage.}
-        \entry{Création de plusieurs projets internes pour améliorer les workflows des collaborateurs via LLMs, fine-tuning, vision par ordinateur et curation/validation de données.}
-        \entry{Gestion de serveurs multi-GPU pour l'entraînement et l'inférence.}
-        \entry{Enseignement de la Vision par Ordinateur et du Traitement Automatique du Langage (NLP) à des étudiants de Master 2.}
-    }
-    
-    \entrybig%
-    {\textbf{Fujitsu}}{Paris, France}
-    {Data Scientist}{2021 \textendash{} 2022}
-    \innerlist{
-        \entry{Développement et gestion de projets en vision par ordinateur et apprentissage profond.}
-    }
-    
-    \entrybig%
-    {\textbf{Fujitsu -- ECE Paris}}{Paris, France}
-    {Apprenti Data Scientist, spécialisé en vision par ordinateur}{2018 \textendash{} 2021}
-    \innerlist{
-        \entry{Mise en œuvre de techniques de vision par ordinateur et d'apprentissage automatique.}
-    }
-    
-    \entrybig%
-    {\textbf{Fujitsu}}{Paris, France}
-    {Stagiaire Data Scientist}{Avril 2018 \textendash{} Sept. 2018}
-    \innerlist{
-        \entry{Développement de démonstrations en apprentissage profond.}
-    }
-}
+\cventry{2022--2026}{Doctorant et Ingénieur de Recherche}{Fujitsu -- Université Gustave Eiffel}{Paris, France}{}{
+    \begin{itemize}
+        \item Conception d'architectures d'inférence adaptative (sorties anticipées, récursion, prédiction sélective) pour modèles de vision et LLMs.
+        \item Entraînement de modèles type GPT (70M--1.3B paramètres) avec FSDP, DDP, Accelerate et clusters GPU distribués.
+        \item Construction de pipelines de données à grande échelle : filtrage, déduplication, scoring qualité et curation multimodale.
+        \item Recherche sur les architectures efficaces en FLOPs et expériences de mise à l'échelle du calcul.
+        \item Développement d'outils internes pour évaluation, comparaison de modèles, validation de datasets et visualisation.
+        \item Gestion de serveurs multi-GPU et infrastructure d'entraînement.
+        \item Enseignement de Vision par Ordinateur et NLP à des étudiants en Master.
+    \end{itemize}}
 
-% Section Compétences
+\cventry{2021--2022}{Data Scientist}{Fujitsu}{Paris, France}{}{
+    \begin{itemize}
+        \item Développement et déploiement de systèmes de vision par ordinateur et d'apprentissage profond pour clients industriels.
+        \item Travail sur des applications multimodales combinant vision, métadonnées et texte.
+    \end{itemize}}
+
+\cventry{2018--2021}{Apprenti Ingénieur en Vision par Ordinateur}{Fujitsu -- ECE Paris}{Paris, France}{}{
+    \begin{itemize}
+        \item Application de l'apprentissage profond à la détection, segmentation et systèmes embarqués.
+        \item Collecte de données, prétraitement et ingénierie de pipelines.
+    \end{itemize}}
+
+\cventry{2018}{Stagiaire en Deep Learning}{Fujitsu}{Paris, France}{}{
+    \begin{itemize}
+        \item Développement de démonstrateurs utilisant le deep learning pour tâches de vision.
+    \end{itemize}}
+
+% SKILLS
 \section{Compétences}
+\cvitem{Machine Learning}{LLMs, Transformers, entraînement distribué, IA multimodale, inférence adaptative, efficacité modèle, calibration, traitement de données.}
+\cvitem{Systèmes Distribués}{FSDP, DDP, Accelerate, DeepSpeed, Slurm, Docker, Kubernetes, clusters multi-GPU, profiling, monitoring.}
+\cvitem{Programmation}{Python, C, C\#, Java, SQL.}
+\cvitem{Frameworks}{PyTorch, TensorFlow, JAX, MLX, écosystème HuggingFace, W\&B, Git.}
+\cvitem{Langues}{Anglais (Courant), Français (Natif), Espagnol (Intermédiaire).}
 
-\outerlist{
-    \entry{\textbf{Langages de programmation:} Python, Java, C\#, C, SQL}
-    \entry{\textbf{Frameworks et outils:} PyTorch, TensorFlow, Docker, Git, JAX, MLX}
-    \entry{\textbf{Développement et systèmes:} Front-end avec React, DevOps, Réseau, Calcul distribué, Cybersécurité, Administration système}
-    \entry{\textbf{Langues:} Anglais (Courant), Français (Natif), Espagnol (Intermédiaire)}
-    \entry{\textbf{Compétences transversales:} Curiosité, Résolution de problèmes, Communication, Collaboration, Travail d'équipe}
-}
-
-% Section Projets
+% PROJECTS
 \section{Projets}
-
-\outerlist{
-    \entrybig[\textbullet]%
-    {FreshDetect (PyTorch et Docker, 2022)}{}
-    {Data scientist}{}
-    {Développé une solution de bout en bout pour la classification en temps réel de fruits et légumes en supermarché à l'aide de l'apprentissage profond. Intégration avec les systèmes du magasin via des microservices conteneurisés.}
-    
-    \entrybig[\textbullet]%
-    {Handterpret (TensorFlow et électronique, 2020)}{}
-    {Chef de projet de fin d'études}{}
-    {Détection de la position de la main grâce à des capteurs infrarouges au poignet.}
-    
-    \entrybig[\textbullet]%
-    {AutoCradle (TensorFlow et électronique, 2017)}{}
-    {Projet d'équipe}{}
-    {Mise en œuvre de la détection automatique des pleurs de bébé pour activer le balancement du berceau.}
-}
+\cvitem{2025}{\textbf{Recursive GPT}. Projet de recherche explorant les lois de mise à l'échelle des Transformers récursifs pour réduire l'usage mémoire et améliorer l'efficacité FLOP ; développement de prototypes à couches récursives et analyse des comportements de mise à l'échelle du calcul.}
+\cvitem{2023}{\textbf{Inférence Adaptative pour LLMs}. Implémentation de têtes de sorties anticipées et couches de supervision internes sur modèles type GPT. Utilisation de modèles Pythia et Phi ; fine-tuning des têtes intermédiaires ; développement d'outils d'évaluation pour compromis FLOP--perte.}
+\cvitem{2022}{\textbf{FreshDetect}. Classification en temps réel de produits frais déployée via microservices conteneurisés (PyTorch, Docker).}
+\cvitem{2020}{\textbf{Handterpret}. Système de détection de position de la main basé sur infrarouge utilisant capteurs embarqués.}
+\cvitem{2017}{\textbf{AutoCradle}. Détection de pleurs de bébé déclenchant le balancement autonome du berceau.}
 
 \end{document}
