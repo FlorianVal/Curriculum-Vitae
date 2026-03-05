@@ -53,12 +53,9 @@ jobs:
       run: |
         cd website
         git config --global user.name 'CV Actions Bot'
-        git config --global user.email ''
-        git add public/main_fr.pdf
-        git add public/main_en.pdf
-        git add public/main_short.pdf
-        git commit -m "Update CV"
-        git push
+        git config --global user.email 'cv-actions-bot@noreply.github.com'
+        git add public/main_fr.pdf public/main_en.pdf public/main_short.pdf
+        git diff --staged --quiet || (git commit -m "Update CV" && git push)
 
     - name: Get Current Date
       run: echo "CURRENT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
