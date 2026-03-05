@@ -1,0 +1,50 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+% ModernCV themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% Character encoding
+\usepackage[utf8]{inputenc}
+
+% Tighter margins for one-pager
+\usepackage[top=1.2cm,bottom=1.2cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{needspace}
+
+% Personal data
+\firstname{Florian}
+\familyname{Valade}
+\title{Machine Learning Research Engineer}
+\address{France}{}
+\phone[mobile]{+33 6 17 57 19 12}
+\email{florian\_val@outlook.fr}
+\homepage{fvalade.fr}
+\social[linkedin]{florian-valade}
+\social[github]{FlorianVal}
+
+\begin{document}
+\makecvtitle
+
+% EDUCATION
+\section{Education}
+\cventry{2022--Present}{PhD in Efficiency of Deep Learning Algorithms}{University Gustave Eiffel}{Paris, France}{}{}
+\cventry{2021}{M.Sc.\ Computer Science, Big Data \& Machine Learning}{ECE Paris}{Paris, France}{}{}
+
+% PUBLICATIONS
+\section{Publications}
+\cvitem{UAI 2025}{\textbf{EERO: Early Exit with Reject Option} --- Formalizes selective early exits via risk-coverage trade-offs; respects strict compute budgets and improves the speed/accuracy Pareto frontier.}
+\cvitem{2024}{\textbf{Accelerating LLM Inference with Self-Supervised Early Exits} --- Fine-tuned early-exit extensions for LLMs; up to 50\% speedup, +66\% acceptance rate and 14$\times$ fewer wasted tokens vs.\ speculative decoding.}
+
+% EXPERIENCE
+\section{Experience}
+\cventry{2026--Now}{AI Research Engineer}{Fujitsu}{Paris, France}{}{Developing and adapting LLMs for production applications.}
+\cventry{2022--2026}{PhD Candidate \& Research Engineer}{Fujitsu -- University Gustave Eiffel}{Paris, France}{}{Designed adaptive-inference architectures (early exits, recursion) for vision models and LLMs; trained GPT-style models (70M--1.3B params) on multi-GPU clusters; built large-scale data pipelines; taught Computer Vision and NLP to Master's students.}
+\cventry{2018--2022}{Data Scientist / Apprentice Engineer}{Fujitsu -- ECE Paris}{Paris, France}{}{Computer vision systems, multimodal applications, detection, segmentation, embedded ML.}
+
+% SKILLS
+\section{Skills}
+\cvitem{ML}{LLMs, Transformers, adaptive inference, distributed training (FSDP/DDP/Accelerate), multimodal AI, model efficiency.}
+\cvitem{Stack}{PyTorch, HuggingFace, JAX, W\&B, Docker, Slurm, Python, Git.}
+\cvitem{Languages}{English (Fluent), French (Native), Spanish (Intermediate).}
+
+\end{document}
