@@ -27,36 +27,7 @@
 
 % PROFILE
 \section{Profile}
-Machine Learning Research Engineer specializing in efficient deep learning, large language models (LLMs), adaptive inference, and distributed training. Experienced in designing new architectures, running large-scale experiments, building multimodal systems, and optimizing GPU training infrastructure.
-
-% HIGHLIGHTS
-\section{Selected Research \& Engineering Highlights}
-\cvlistitem{Trained and fine-tuned GPT-like LLMs (70M--1.3B parameters) on multi-GPU clusters (V100/A100) using FSDP, DDP, Accelerate, and custom distributed pipelines.}
-\cvlistitem{Developed adaptive-inference methods (early exits, reject option, recursion) achieving significant FLOP reductions while preserving model accuracy.}
-\cvlistitem{Built large-scale dataset pipelines: streaming loaders, deduplication, filtering, and curation.}
-\cvlistitem{Designed compute-efficient Transformer variants and performed scaling-law analysis on loss--compute trade-offs.}
-\cvlistitem{Built internal LLM tools for workflow automation.}
-\cvlistitem{Managed GPU servers and research infrastructure; optimized throughput, training stability, and reproducibility.}
-
-% EDUCATION
-\section{Education}
-\cventry{2022--Present}{PhD in Efficiency of Deep Learning Algorithms}{University Gustave Eiffel}{Paris, France}{}{}
-\cventry{2021}{Master's Degree in Computer Science, Big Data and Machine Learning}{ECE Paris}{Paris, France}{}{}
-\cventry{2015}{High School Diploma in Science}{L'Espérance High School}{Paris, France}{}{}
-
-% PUBLICATIONS
-\section{Publications}
-\cvitem{2025}{\textbf{EERO: Early Exit with Reject Option} --- UAI 2025.
-    \begin{itemize}
-        \item Formalizes selective early exits using risk-coverage trade-offs.
-        \item Respects strict compute budgets and improves the state-of-the-art speed/accuracy trade-off.
-    \end{itemize}}
-\cvitem{2024}{\textbf{Accelerating Large Language Model Inference with Self-Supervised Early Exits}.
-    \begin{itemize}
-        \item Introduces fine tuned early-exit extensions for LLMs using internal supervision signals.
-        \item Enables FLOP-efficient inference with up to 50\% speedup.
-        \item Achieves +66\% acceptance rate and 14x fewer wasted tokens compared to speculative decoding.
-    \end{itemize}}
+Machine Learning Research Engineer specializing in efficient deep learning, large language models (LLMs), adaptive inference, and distributed training. Experienced in designing new architectures, running large-scale experiments, building multimodal systems, optimizing GPU training infrastructure, and designing and deploying agentic AI systems with custom agent harnesses.
 
 % EXPERIENCE
 \needspace{6\baselineskip}
@@ -65,6 +36,7 @@ Machine Learning Research Engineer specializing in efficient deep learning, larg
 \cventry{2026--Current}{AI Research Engineer}{Fujitsu}{Paris, France}{}{
     \begin{itemize}
         \item Developing and adapting large language models for various applications.
+        \item Designed and deployed agentic AI systems by building a custom agent harness from scratch.
     \end{itemize}}
 
 \cventry{2022--2026}{PhD Candidate \& Research Engineer}{Fujitsu -- University Gustave Eiffel}{Paris, France}{}{
@@ -95,10 +67,39 @@ Machine Learning Research Engineer specializing in efficient deep learning, larg
         \item Built demonstrators using deep learning for vision tasks.
     \end{itemize}}
 
+% EDUCATION
+\section{Education}
+\cventry{2022--Present}{PhD in Efficiency of Deep Learning Algorithms}{University Gustave Eiffel}{Paris, France}{}{}
+\cventry{2021}{Master's Degree in Computer Science, Big Data and Machine Learning}{ECE Paris}{Paris, France}{}{}
+\cventry{2015}{High School Diploma in Science}{L'Espérance High School}{Paris, France}{}{}
+
+% PUBLICATIONS
+\section{Publications}
+\cvitem{2025}{\textbf{EERO: Early Exit with Reject Option} --- UAI 2025.
+    \begin{itemize}
+        \item Formalizes selective early exits using risk-coverage trade-offs.
+        \item Respects strict compute budgets and improves the state-of-the-art speed/accuracy trade-off.
+    \end{itemize}}
+\cvitem{2024}{\textbf{Accelerating Large Language Model Inference with Self-Supervised Early Exits}.
+    \begin{itemize}
+        \item Introduces fine tuned early-exit extensions for LLMs using internal supervision signals.
+        \item Enables FLOP-efficient inference with up to 50\% speedup.
+        \item Achieves +66\% acceptance rate and 14x fewer wasted tokens compared to speculative decoding.
+    \end{itemize}}
+
+% HIGHLIGHTS
+\section{Selected Research \& Engineering Highlights}
+\cvlistitem{Trained and fine-tuned GPT-like LLMs (70M--1.3B parameters) on multi-GPU clusters (V100/A100) using FSDP, DDP, Accelerate, and custom distributed pipelines.}
+\cvlistitem{Developed adaptive-inference methods (early exits, reject option, recursion) achieving significant FLOP reductions while preserving model accuracy.}
+\cvlistitem{Built large-scale dataset pipelines: streaming loaders, deduplication, filtering, and curation.}
+\cvlistitem{Designed compute-efficient Transformer variants and performed scaling-law analysis on loss--compute trade-offs.}
+\cvlistitem{Built internal LLM tools for workflow automation.}
+\cvlistitem{Managed GPU servers and research infrastructure; optimized throughput, training stability, and reproducibility.}
+
 % SKILLS
 \section{Skills}
-\cvitem{Machine Learning}{LLMs, Transformers, distributed training, multimodal AI, adaptive inference, model efficiency, calibration, data processing.}
-\cvitem{Distributed Systems}{FSDP, DDP, Accelerate, DeepSpeed, Slurm, Docker, Kubernetes, multi-GPU clusters, profiling, monitoring.}
+\cvitem{Machine Learning}{LLMs, Transformers, distributed training, multimodal AI, adaptive inference, early exit, model efficiency, calibration, data processing.}
+\cvitem{Distributed Systems}{FSDP, DDP, Accelerate, DeepSpeed, Docker, Kubernetes, multi-GPU clusters, profiling, monitoring.}
 \cvitem{Programming}{Python, C, C\#, Java, SQL.}
 \cvitem{Frameworks}{PyTorch, TensorFlow, JAX, MLX, HuggingFace ecosystem, W\&B, Git.}
 \cvitem{Languages}{English (Fluent), French (Native), Spanish (Intermediate).}
