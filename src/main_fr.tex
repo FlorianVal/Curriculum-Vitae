@@ -23,7 +23,7 @@
     \end{tabular}
 }
 
-{\normalfont{À la recherche d'un poste de recherche}}
+{\normalfont{Ingénieur de recherche en apprentissage automatique — spécialisé en efficacité des LLMs}}
 
 % Section Formation
 \section{Formation}
@@ -47,12 +47,20 @@
 
 \outerlist{
     \entrybig%
-    {EERO: Early Exit with Reject Option (2025)}{}
-    {- Optimisation des mécanismes de sortie anticipée dans les tâches de classification.}{UAI 2025}
-    
+    {\textbf{EERO: Early Exit with Reject Option} (2025)}{}
+    {UAI 2025}{}
+    \innerlist{
+        \entry{Formalise les sorties anticipées sélectives via des compromis risque-couverture.}
+        \entry{Respecte des budgets de calcul stricts et améliore le compromis vitesse/précision de l'état de l'art.}
+    }
+
     \entrybig%
-    {Accelerating Large Language Model Inference with Self-Supervised Early Exits (2024)}{}
-    {- Extension des techniques de sortie anticipée aux grands modèles de langage pour optimiser l'inférence.}{}
+    {\textbf{Accelerating LLM Inference with Self-Supervised Early Exits} (2024)}{}
+    {}{}
+    \innerlist{
+        \entry{Sorties anticipées supervisées en interne pour LLMs : jusqu'à 50\% d'accélération.}
+        \entry{+66\% de taux d'acceptation et 14x moins de tokens gaspillés vs. décodage spéculatif.}
+    }
 }
 
 % Section Expérience
@@ -63,18 +71,20 @@
     {\textbf{Fujitsu}}{Paris, France}
     {Ingénieur de recherche en IA}{Jan. 2026 \textendash{} Présent}
     \innerlist{
-        \entry{[ADAPTER: Description du poste actuel - recherche, développement, projets en cours]}
+        \entry{Ajustement (fine-tuning) et adaptation de grands modèles de langage pour des applications en production.}
+        \entry{Conception et déploiement de workflows d'IA agentique via un harness d'agents personnalisé.}
     }
 
     \entrybig
     {\textbf{Fujitsu -- Université Gustave Eiffel}}{Paris, France}
     {Doctorant, Ingénieur de recherche}{2022 \textendash{} Jan. 2026 (thèse soutenue)}
     \innerlist{
-        \entry{Optimisation d'algorithmes d'apprentissage profond pour la reconnaissance sur caméras embarquées à l'aide de techniques statistiques sur les sorties anticipées (Early Exit).}
-        \entry{Entraînement et ajustement (fine-tuning) de grands modèles de langage.}
-        \entry{Création de plusieurs projets internes pour améliorer les workflows des collaborateurs via LLMs, fine-tuning, vision par ordinateur et curation/validation de données.}
-        \entry{Gestion de serveurs multi-GPU pour l'entraînement et l'inférence.}
-        \entry{Enseignement de la Vision par Ordinateur et du Traitement Automatique du Langage (NLP) à des étudiants de Master 2.}
+        \entry{Pré-entraînement et ajustement (fine-tuning) de modèles GPT (70M--7B paramètres) avec FSDP, DDP, Accelerate et clusters GPU distribués.}
+        \entry{Application de techniques de compression : distillation, élagage (pruning) et inférence adaptative (sorties anticipées, prédiction sélective) pour modèles de vision et LLMs.}
+        \entry{Recherche d'architectures Transformer FLOP-efficaces et analyse des lois de mise à l'échelle (scaling laws).}
+        \entry{Développement d'outils internes pour l'évaluation, le benchmarking, la comparaison de modèles et la visualisation.}
+        \entry{Gestion de serveurs multi-GPU et de l'infrastructure d'entraînement.}
+        \entry{Enseignement de la Vision par Ordinateur et du NLP à des étudiants de Master 2.}
     }
     
     \entrybig%
@@ -99,15 +109,26 @@
     }
 }
 
+% Section Points forts
+\section{Points forts en recherche et ingénierie}
+
+\outerlist{
+    \entry{Pré-entraînement et fine-tuning de LLMs GPT (70M--7B paramètres) sur clusters multi-GPU (V100/A100) avec FSDP, DDP, Accelerate et pipelines distribués.}
+    \entry{Compression de LLMs par distillation, élagage et inférence adaptative (sorties anticipées, option de rejet), avec réductions FLOP significatives sans perte de précision.}
+    \entry{Déploiement et benchmarking de modèles quantifiés (INT4/INT8) en pipelines d'inférence en production.}
+    \entry{Conception de variantes Transformer FLOP-efficaces et analyse des lois de mise à l'échelle (perte--calcul).}
+    \entry{Gestion de l'infrastructure GPU de recherche ; optimisation du débit, de la stabilité d'entraînement et de la reproductibilité.}
+}
+
 % Section Compétences
 \section{Compétences}
 
 \outerlist{
-    \entry{\textbf{Langages de programmation:} Python, Java, C\#, C, SQL}
-    \entry{\textbf{Frameworks et outils:} PyTorch, TensorFlow, Docker, Git, JAX, MLX}
-    \entry{\textbf{Développement et systèmes:} Front-end avec React, DevOps, Réseau, Calcul distribué, Cybersécurité, Administration système}
+    \entry{\textbf{Apprentissage automatique:} LLMs, Transformers, pré-entraînement, fine-tuning, distillation, élagage, quantification (déploiement), inférence adaptative, sorties anticipées, efficacité des modèles, calibration, traitement de données.}
+    \entry{\textbf{Systèmes distribués:} FSDP, DDP, Accelerate, DeepSpeed, Docker, Kubernetes, clusters multi-GPU, Azure, GCP, profilage, monitoring.}
+    \entry{\textbf{Langages de programmation:} Python, C, C\#, Java, SQL}
+    \entry{\textbf{Frameworks:} PyTorch, TensorFlow, JAX, MLX, HuggingFace ecosystem, W\&B, Git}
     \entry{\textbf{Langues:} Anglais (Courant), Français (Natif), Espagnol (Intermédiaire)}
-    \entry{\textbf{Compétences transversales:} Curiosité, Résolution de problèmes, Communication, Collaboration, Travail d'équipe}
 }
 
 % Section Projets
