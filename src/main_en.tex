@@ -27,7 +27,7 @@
 
 % PROFILE
 \section{Profile}
-Machine Learning Research Engineer specializing in efficient deep learning, large language models (LLMs), adaptive inference, and distributed training. Experienced in designing new architectures, running large-scale experiments, building multimodal systems, optimizing GPU training infrastructure, and designing and deploying agentic AI systems with custom agent harnesses.
+Machine Learning Research Engineer specializing in large language model efficiency. Experienced in pretraining, fine-tuning, and distillation of LLMs and vision models; designing adaptive-inference architectures; running distributed training; and building multimodal systems and data pipelines on GPU clusters.
 
 % EXPERIENCE
 \needspace{6\baselineskip}
@@ -35,17 +35,16 @@ Machine Learning Research Engineer specializing in efficient deep learning, larg
 
 \cventry{2026--Current}{AI Research Engineer}{Fujitsu}{Paris, France}{}{
     \begin{itemize}
-        \item Developing and adapting large language models for various applications.
-        \item Designed and deployed agentic AI systems by building a custom agent harness from scratch.
+        \item Fine-tuning and adapting large language models for production applications.
+        \item Designed and deployed agentic AI workflows using a custom agent harness.
     \end{itemize}}
 
 \cventry{2022--2026}{PhD Candidate \& Research Engineer}{Fujitsu -- University Gustave Eiffel}{Paris, France}{}{
     \begin{itemize}
-        \item Designed adaptive-inference architectures (early exits, recursion, selective prediction) for vision models and LLMs.
-        \item Trained GPT-style models (70M--1.3B parameters) with FSDP, DDP, Accelerate, and distributed GPU clusters.
-        \item Built large-scale data pipelines: filtering, deduplication, quality scoring, and multimodal curation.
+        \item Pretrained and fine-tuned GPT-style models (70M--7B parameters) with FSDP, DDP, Accelerate, and distributed GPU clusters.
+        \item Applied model compression techniques: distillation, pruning, and adaptive inference (early exits, selective prediction) for vision models and LLMs.
         \item Conducted FLOP-efficient architecture research and compute scaling experiments.
-        \item Built internal tooling for evaluation, model comparison, dataset validation, and visualization.
+        \item Built internal tooling for evaluation, benchmarking, model comparison, and visualization.
         \item Managed multi-GPU servers and training infrastructure.
         \item Taught Computer Vision and NLP to Master's students.
     \end{itemize}}
@@ -88,18 +87,18 @@ Machine Learning Research Engineer specializing in efficient deep learning, larg
     \end{itemize}}
 
 % HIGHLIGHTS
+\needspace{6\baselineskip}
 \section{Selected Research \& Engineering Highlights}
-\cvlistitem{Trained and fine-tuned GPT-like LLMs (70M--1.3B parameters) on multi-GPU clusters (V100/A100) using FSDP, DDP, Accelerate, and custom distributed pipelines.}
-\cvlistitem{Developed adaptive-inference methods (early exits, reject option, recursion) achieving significant FLOP reductions while preserving model accuracy.}
-\cvlistitem{Built large-scale dataset pipelines: streaming loaders, deduplication, filtering, and curation.}
+\cvlistitem{Pretrained and fine-tuned GPT-like LLMs (70M--7B parameters) on multi-GPU clusters (V100/A100) using FSDP, DDP, Accelerate, and custom distributed pipelines.}
+\cvlistitem{Compressed LLMs via distillation, pruning, and adaptive inference (early exits, reject option), achieving significant FLOP reductions while preserving accuracy.}
+\cvlistitem{Deployed and benchmarked quantized models (INT4/INT8) in production inference pipelines.}
 \cvlistitem{Designed compute-efficient Transformer variants and performed scaling-law analysis on loss--compute trade-offs.}
-\cvlistitem{Built internal LLM tools for workflow automation.}
 \cvlistitem{Managed GPU servers and research infrastructure; optimized throughput, training stability, and reproducibility.}
 
 % SKILLS
 \section{Skills}
-\cvitem{Machine Learning}{LLMs, Transformers, distributed training, multimodal AI, adaptive inference, early exit, model efficiency, calibration, data processing.}
-\cvitem{Distributed Systems}{FSDP, DDP, Accelerate, DeepSpeed, Docker, Kubernetes, multi-GPU clusters, profiling, monitoring.}
+\cvitem{Machine Learning}{LLMs, Transformers, pretraining, fine-tuning, distillation, pruning, quantization (deployment), adaptive inference, early exit, model efficiency, calibration, data processing.}
+\cvitem{Distributed Systems}{FSDP, DDP, Accelerate, DeepSpeed, Docker, Kubernetes, multi-GPU clusters, Azure, GCP, profiling, monitoring.}
 \cvitem{Programming}{Python, C, C\#, Java, SQL.}
 \cvitem{Frameworks}{PyTorch, TensorFlow, JAX, MLX, HuggingFace ecosystem, W\&B, Git.}
 \cvitem{Languages}{English (Fluent), French (Native), Spanish (Intermediate).}
