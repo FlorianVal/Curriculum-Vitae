@@ -43,3 +43,4 @@
 # Tailored CVs (job-specific, not versioned)
 src/tailored/.github/
 docs/
+src/tailored/
