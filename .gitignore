@@ -41,4 +41,5 @@
 *.txt
 
 # Tailored CVs (job-specific, not versioned)
-src/tailored/
+src/tailored/.github/
+docs/
